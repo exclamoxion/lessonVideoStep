@@ -1,0 +1,87 @@
+body {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.h {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #266a2d;
+    color: white;
+}
+
+h3 {
+    color: #198754;
+}
+
+hr {
+    background-color: #198754 !important;
+}
+
+span {
+    color: red;
+}
+
+.alert {
+    background-color: #266a2d;
+    color: white;
+}
+
+#submitbutton {
+    background-color: #212529;
+    color: white;
+}
+
+#submitbutton:hover {
+    background-color: #198754;
+    color: white;
+}
+
+#backbutton {
+    background-color: #212529;
+    color: white;
+}
+
+#backbutton:hover {
+    background-color: #198754;
+    color: white;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #266a2d;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #37517e;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#btclose {
+    border: 1px solid black;
+}
